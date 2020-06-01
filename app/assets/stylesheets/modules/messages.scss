@@ -8,6 +8,7 @@
 .side-bar{
   width: 300px;
   border-bottom: 1px solid #eeeeee;
+  background-color: #2f3e51;
   }
 .side-header{
     background-color: #253141;
@@ -43,6 +44,15 @@
 .group-list{
     background-color: #2f3e51;
     height: calc(100vh - 100px);
+    color: #ffffff;
+    &__group-name{
+      font-size: 15px;
+      margin: 20px 20px 5px 20px;
+      }
+    &__message{
+      font-size: 11px;
+      margin: 0px 20px 40px 20px;
+    }
 }
 
 .chat-main{
