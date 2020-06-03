@@ -49,9 +49,13 @@ $moji_gray:#999999;
     .group-list{
       background-color: #2f3e51;
       height: calc(100vh - 100px);
-      color: $moji_white;
+      
       padding-top: 20px;
       &__box{
+        a{
+          text-decoration: none;
+          color: $moji_white;
+        }
         &__group-name{
           font-size: 15px;
           margin: 0px 20px 5px 20px;
@@ -104,6 +108,7 @@ $moji_gray:#999999;
     background-color: #fafafa;
     height: calc(100vh - 190px);
     padding-top: 35px;
+    overflow: auto;
     &__box{
       margin: 0px 0px 46px 40px;
       &__user{
