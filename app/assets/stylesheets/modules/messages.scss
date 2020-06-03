@@ -51,13 +51,15 @@ $moji_gray:#999999;
       height: calc(100vh - 100px);
       color: $moji_white;
       padding-top: 20px;
-      &__group-name{
-        font-size: 15px;
-        margin: 0px 20px 5px 20px;
-      }
-      &__message{
-        font-size: 11px;
-        margin: 0px 20px 40px 20px;
+      &__box{
+        &__group-name{
+          font-size: 15px;
+          margin: 0px 20px 5px 20px;
+        }
+        &__message{
+          font-size: 11px;
+          margin: 0px 20px 40px 20px;
+        }
       }
     }
 
