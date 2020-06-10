@@ -3,7 +3,7 @@ $(function(){
     if ( message.image ){
       let html =
         `<div class="message-list__box">
-          <div class="message-list__box__user">
+          <div class="message-list__box__user" data-message-id=${message.id}>
             <div class="message-list__box__user__name">
               ${message.user_name}
             </div>
@@ -22,7 +22,7 @@ $(function(){
     } else {
       let html =
       `<div class="message-list__box">
-        <div class="message-list__box__user">
+        <div class="message-list__box__user" data-message-id=${message.id}>
           <div class="message-list__box__user__name">
             ${message.user_name}
           </div>
@@ -55,7 +55,7 @@ $(function(){
     .done(function(data){
       let html = buildHTML(data);
       $('.message-list').append(html);
-      $('.message-list').animate({　scrollTop: $('.message-list')[0].scrollHeight});
+      $('.message-list').animate({ scrollTop: $('.message-list')[0].scrollHeight});
       $('.new-message')[0].reset();
       $('.submit-btn').prop('disabled', false);
     })
