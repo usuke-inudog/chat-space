@@ -51,7 +51,7 @@ $moji_gray:#999999;
     .group-list{
       background-color: #2f3e51;
       height: calc(100vh - 100px);
-      
+      overflow: auto;
       padding-top: 20px;
       &__box{
         a{
